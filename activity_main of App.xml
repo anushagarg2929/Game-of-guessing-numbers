@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/NumberEditTextField"
+        android:layout_width="381dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:text="I'm thinking of a number between 1 to 20."
+        android:textColor="#686767"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/GuessEditTextField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/GuessEditTextField"
+        android:layout_width="233dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="11dp"
+        android:text="Can u guess it?"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/NumberEditTextField"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="170dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GuessButtom"
+        android:layout_width="169dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="124dp"
+        android:backgroundTint="#FAFAFA"
+        android:backgroundTintMode="add"
+        android:onClick="guess"
+        android:text="Guess"
+        android:textColor="#000000"
+        app:iconTint="#BD2727"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
